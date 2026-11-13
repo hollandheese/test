@@ -14,6 +14,8 @@ image-version: latest # You can pin to a specific version of Fedora as well
 modules:
   - type: akmods
     base: surface
+    install:
+      - v4l2loopback
   - type: files
     files:
       - source: system
